@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapiceros Ecológicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #2e8b57;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para los submenús */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #3a9d69;
+            padding: 10px;
+            list-style-type: none;
+            margin: 0;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            padding: 10px;
+        }
+
+        section {
+            padding: 60px 20px; /* Aumentado para dar espacio y que no se solape el contenido */
+            text-align: center;
+            min-height: 100vh; /* Cada sección ocupa al menos toda la pantalla */
+        }
+        h1, h2 {
+            color: #333;
+        }
+
+        /* Estilo para las imágenes en el portafolio */
+        .portfolio-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .portfolio-images img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .portfolio-images img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilo para la imagen de inicio */
+        .inicio-img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#acerca">Acerca de</a></li>
+            <li>
+                <a href="#portafolio">Portafolio</a>
+            </li>
+            <li>
+                <a href="#servicios">Servicios</a>
+            </li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <h1>Bienvenido a Lapiceros Ecológicos</h1>
+        <p>Ofrecemos productos de papelería ecológica que cuidan el medio ambiente.</p>
+        <!-- Imagen en la sección de inicio -->
+        <img class="inicio-img" src="lapiceros.jpg" alt="Lapiceros Ecológicos">
+    </section>
+
+    <section id="acerca">
+        <h2>Acerca de Nosotros</h2>
+        <p>Visión:
+            Ser reconocidos como líderes en la promoción de prácticas sostenibles mediante la fabricación y distribución de lapiceros ecológicos que inspiren a personas y empresas a adoptar un estilo de vida y un entorno más respetuoso con el medio ambiente.
+            Misión:
+            Fabricar lapiceros ecológicos de alta calidad utilizando materiales sostenibles y procesos responsables, promoviendo la conciencia ambiental y ofreciendo soluciones prácticas que reduzcan el impacto negativo en el planeta..</p>
+    </section>
+
+    <section id="portafolio">
+        <h2>Nuestros Productos</h2>
+        <p>Explore nuestra variedad de lapiceros ecológicos, diseñados para brindar calidad y respeto al medio ambiente.</p>
+        
+        <div class="portfolio-images">
+            <div id="imagen1">
+                <img src="lapiceros1.jpg" alt="Lapicero Ecológico 1">
+            </div>
+            <div id="imagen2">
+                <img src="lapiceros2.jpg" alt="Lapicero Ecológico 2">
+            </div>
+            <div id="imagen3">
+                <img src="lapiceros4.jpg" alt="Lapicero Ecológico 3">
+            </div>
+            <div id="imagen4">
+                <img src="lapiceros5.jpg" alt="Lapicero Ecológico 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <p>Ofrecemos una gama de servicios diseñados para promover la sostenibilidad y el uso de productos ecológicos.</p>
+        
+        <div id="servicio1">
+            <h3>Sostenibilidad Ambiental</h3>
+            <p>Consultoría en sostenibilidad ambiental y la implementación de prácticas ecológicas en tu empresa.</p>
+        </div>
+        <div id="servicio2">
+            <h3>Asesoramiento</h3>
+            <p>Asesoramiento sobre productos ecológicos y su impacto en el medio ambiente.</p>
+        </div>
+        <div id="servicio3">
+            <h3>Diseños</h3>
+            <p>Diseño personalizado de productos ecológicos, como lapiceros biodegradables para tu empresa.</p>
+        </div>
+        <div id="servicio4">
+            <h3>Ayuda </h3>
+            <p>Capacitación y talleres sobre sostenibilidad para empleados y empresas.</p>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o deseas más información? Contáctanos a través de nuestro formulario de contacto.</p>
+    </section>
+
+</body>
+</html>
